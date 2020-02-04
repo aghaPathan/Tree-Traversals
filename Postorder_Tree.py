@@ -4,17 +4,21 @@ from Tree import Node
 tree_order = []
 
 # Creating a tree
-root = Node(1)
-root.left_child = Node(2)
-root.right_child = Node(3)
-root.left_child.left_child = Node(4)
-root.left_child.right_child = Node(5)
-root.right_child.left_child = Node(6)
-root.right_child.right_child = Node(7)
-root.left_child.left_child.left_child = Node(8)
-root.left_child.left_child.left_child.left_child = Node(9)
-root.left_child.left_child.left_child.right_child = Node(10)
-
+root = Node(25)
+root.left_child = Node(15)
+root.left_child.left_child = Node(10)
+root.left_child.right_child = Node(22)
+root.left_child.left_child.left_child = Node(4)
+root.left_child.left_child.right_child = Node(12)
+root.left_child.right_child.left_child = Node(18)
+root.left_child.right_child.right_child = Node(24)
+root.right_child = Node(50)
+root.right_child.left_child = Node(35)
+root.right_child.right_child = Node(70)
+root.right_child.left_child.left_child = Node(31)
+root.right_child.left_child.right_child = Node(44)
+root.right_child.right_child.left_child = Node(66)
+root.right_child.right_child.right_child = Node(90)
 
 class In_Order():
     def __init__(self, root):
